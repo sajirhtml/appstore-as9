@@ -5,6 +5,7 @@ import AuthLayout from '../layouts/AuthLayout';
 import Login from '../components/Login';
 import Register from '../components/Register';
 import Home from '../pages/Home';
+import Loading from '../components/Loading';
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,8 @@ const router = createBrowserRouter([
             {
                 index:true,
                 Component: Home,
+                loader: () => fetch("/apps.json"),
+                hydrateFallbackElement: Loading
             }
         ]
     },
