@@ -1,28 +1,25 @@
 import React from "react";
+import { FaUserCircle } from "react-icons/fa";
+import { Link } from "react-router";
 
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">AppStore</a>
+        <Link to="/" className="font-semibold text-2xl">AppStore</Link>
       </div>
-      <div className="flex-none">
-        
+      <div className="flex-none ">
         <div className="dropdown dropdown-end">
           <div
-            tabIndex={0}
             role="button"
             className="btn btn-ghost btn-circle avatar"
           >
-            <div className="w-10 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-              />
+            <div className="rounded-full">
+              <FaUserCircle className="text-3xl" />
             </div>
           </div>
         </div>
-        <button className="btn btn-primary">Sign In</button>
+          <Link to="/auth/login" className="btn btn-primary mx-2 md:mx-5">Log in</Link>
       </div>
     </div>
   );

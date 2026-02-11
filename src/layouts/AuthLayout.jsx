@@ -3,13 +3,13 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Outlet } from "react-router";
 
-const HomeLayout = () => {
+const AuthLayout = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-between">
+    <div className="min-h-screen flex flex-col justify-between gap-10">
       <header>
         <Navbar></Navbar>
       </header>
-      <main>
+      <main className="mx-auto">
         <Outlet></Outlet>
       </main>
       <footer>
@@ -19,4 +19,4 @@ const HomeLayout = () => {
   );
 };
 
-export default HomeLayout;
+export default AuthLayout;
