@@ -9,7 +9,7 @@ const HomeLayout = () => {
       <header>
         <Navbar></Navbar>
       </header>
-      <main>
+      <main className="mx-auto min-h-fit">
         <Outlet></Outlet>
       </main>
       <footer>

@@ -1,0 +1,238 @@
+[
+  {
+    "id": "app001",
+    "name": "Programming Hero",
+    "developer": "Programming Hero Ltd.",
+    "thumbnail": "https://i.ibb.co/sWbb4Z5/programming-hero-thumb.jpg",
+    "banner": "https://i.ibb.co/vj5rT68/programming-hero-banner.jpg",
+    "downloads": 3500000,
+    "category": "Education",
+    "rating": 4.8,
+    "description": "Programming Hero is a fun and interactive way to learn programming. Whether you're a beginner or looking to brush up your skills, this app makes learning to code exciting and practical.",
+    "features": ["Interactive coding lessons", "Real-world projects", "Gamified learning experience"],
+    "reviews": [
+      { "user": "coder_nadia", "rating": 5, "comment": "Best app for beginners! The lessons are super easy to follow." },
+      { "user": "dev_mike", "rating": 4, "comment": "Great content, but would love more Python advanced topics." }
+    ]
+  },
+  {
+    "id": "app002",
+    "name": "ZenTime Productivity",
+    "developer": "Zenith Labs",
+    "thumbnail": "https://i.ibb.co/M9K3P5L/zentime-thumb.jpg",
+    "banner": "https://i.ibb.co/pLzX6vG/zentime-banner.jpg",
+    "downloads": 1200000,
+    "category": "Productivity",
+    "rating": 4.7,
+    "description": "Master your schedule with AI-driven time blocking and deep work sessions. ZenTime helps you eliminate distractions and find your flow state.",
+    "features": ["Smart Time Blocking", "Focus Music integration", "Distraction Blocker"],
+    "reviews": [
+      { "user": "busy_bee", "rating": 5, "comment": "Changed how I work. The UI is incredibly clean." },
+      { "user": "jason_r", "rating": 3, "comment": "Good app, but the premium subscription is a bit pricey." }
+    ]
+  },
+  {
+    "id": "app003",
+    "name": "Shadow Quest: Origins",
+    "developer": "Nebula Games",
+    "thumbnail": "https://i.ibb.co/Y2B7D4z/shadow-thumb.jpg",
+    "banner": "https://i.ibb.co/fGH3mK9/shadow-banner.jpg",
+    "downloads": 8900000,
+    "category": "Gaming",
+    "rating": 4.9,
+    "description": "An award-winning open-world RPG with stunning graphics and deep lore. Battle through mythical lands to save your kingdom from the Shadow King.",
+    "features": ["Open World", "Real-time Combat", "Multiplayer Raids"],
+    "reviews": [
+      { "user": "gamer_guy", "rating": 5, "comment": "The best RPG on mobile hands down." },
+      { "user": "rpg_lover", "rating": 5, "comment": "Incredible graphics! Feels like a console game." }
+    ]
+  },
+  {
+    "id": "app004",
+    "name": "Duolingo Clone",
+    "developer": "Linguist Pro",
+    "thumbnail": "https://i.ibb.co/ZxbT9N1/language-thumb.jpg",
+    "banner": "https://i.ibb.co/nC5R0m2/language-banner.jpg",
+    "downloads": 15000000,
+    "category": "Education",
+    "rating": 4.6,
+    "description": "Learn over 40 languages through bite-sized lessons. Practice speaking, reading, listening, and writing to build your vocabulary.",
+    "features": ["Speech Recognition", "Daily Streaks", "Competitive Leagues"],
+    "reviews": [
+      { "user": "polyglot_sam", "rating": 4, "comment": "Very helpful, but the ads are getting frequent." },
+      { "user": "maria_v", "rating": 5, "comment": "I learned Spanish in 6 months using this!" }
+    ]
+  },
+  {
+    "id": "app005",
+    "name": "Note Master",
+    "developer": "SkyHigh Software",
+    "thumbnail": "https://i.ibb.co/K2D8Xw4/note-thumb.jpg",
+    "banner": "https://i.ibb.co/qD8m4zX/note-banner.jpg",
+    "downloads": 500000,
+    "category": "Productivity",
+    "rating": 4.2,
+    "description": "A versatile note-taking app that supports Markdown, handwriting, and cloud sync. Perfect for students and professionals.",
+    "features": ["Markdown Support", "OCR Search", "Cross-device Sync"],
+    "reviews": [
+      { "user": "student_life", "rating": 5, "comment": "Perfect for taking lecture notes with my stylus." },
+      { "user": "tech_minimalist", "rating": 2, "comment": "Syncing is slow and buggy on Android." }
+    ]
+  },
+  {
+    "id": "app006",
+    "name": "Cyber Racer X",
+    "developer": "Nitro Studios",
+    "thumbnail": "https://i.ibb.co/Tq8mN2x/racer-thumb.jpg",
+    "banner": "https://i.ibb.co/R9m4jKz/racer-banner.jpg",
+    "downloads": 2500000,
+    "category": "Gaming",
+    "rating": 4.5,
+    "description": "Futuristic neon racing at 200mph. Customize your hover-car and compete in underground street races across Neo-Tokyo.",
+    "features": ["Hover Physics", "Custom Vinyls", "Nitro Boost"],
+    "reviews": [
+      { "user": "speed_demon", "rating": 5, "comment": "Adrenaline rush! The soundtrack is fire." },
+      { "user": "casual_player", "rating": 3, "comment": "Controls are a bit sensitive, hard to steer." }
+    ]
+  },
+  {
+    "id": "app007",
+    "name": "Mindful Meditation",
+    "developer": "Aura Health",
+    "thumbnail": "https://i.ibb.co/vD7k0X2/aura-thumb.jpg",
+    "banner": "https://i.ibb.co/Srt6nL1/aura-banner.jpg",
+    "downloads": 4000000,
+    "category": "Education",
+    "rating": 4.8,
+    "description": "Learn the art of mindfulness. Guided meditations for sleep, anxiety, and focus from world-class experts.",
+    "features": ["Sleep Stories", "Breathing Exercises", "Mood Tracking"],
+    "reviews": [
+      { "user": "peace_seeker", "rating": 5, "comment": "Helped me so much with my insomnia." },
+      { "user": "daily_user", "rating": 4, "comment": "Great content, but the UI needs a dark mode." }
+    ]
+  },
+  {
+    "id": "app008",
+    "name": "Task Force Pro",
+    "developer": "CollabWorks",
+    "thumbnail": "https://i.ibb.co/C0m9Xz4/task-thumb.jpg",
+    "banner": "https://i.ibb.co/wL6kR8V/task-banner.jpg",
+    "downloads": 750000,
+    "category": "Productivity",
+    "rating": 4.1,
+    "description": "Kanban style task management for teams. Track projects, set deadlines, and collaborate in real-time.",
+    "features": ["Kanban Boards", "Team Chat", "Gantt Charts"],
+    "reviews": [
+      { "user": "manager_tom", "rating": 4, "comment": "Solid alternative to Trello." },
+      { "user": "freelancer_kim", "rating": 3, "comment": "A bit overkill for a single person." }
+    ]
+  },
+  {
+    "id": "app009",
+    "name": "Viking Siege",
+    "developer": "Nordic Games",
+    "thumbnail": "https://i.ibb.co/mC8j2x0/viking-thumb.jpg",
+    "banner": "https://i.ibb.co/v4mK9zL/viking-banner.jpg",
+    "downloads": 6200000,
+    "category": "Gaming",
+    "rating": 4.4,
+    "description": "Build your village, train your army, and sail the seas to conquer new lands in this strategic war game.",
+    "features": ["Base Building", "Clan Wars", "Naval Combat"],
+    "reviews": [
+      { "user": "odin_son", "rating": 5, "comment": "Love the theme and the strategic depth." },
+      { "user": "salty_gamer", "rating": 2, "comment": "Pay to win. High level players keep attacking me." }
+    ]
+  },
+  {
+    "id": "app010",
+    "name": "Code Academy Mobile",
+    "developer": "DevStream",
+    "thumbnail": "https://i.ibb.co/fX0j9kH/code-thumb.jpg",
+    "banner": "https://i.ibb.co/G3Xm8nL/code-banner.jpg",
+    "downloads": 2200000,
+    "category": "Education",
+    "rating": 4.6,
+    "description": "Learn Web Development, Data Science, and AI on the go. Short, interactive lessons designed for mobile users.",
+    "features": ["Sandbox Editor", "Certificate of Completion", "Peer Reviews"],
+    "reviews": [
+      { "user": "newbie_dev", "rating": 5, "comment": "Perfect for learning while commuting." }
+    ]
+  },
+  {
+    "id": "app011",
+    "name": "ScanIt All",
+    "developer": "Utility Hub",
+    "thumbnail": "https://i.ibb.co/L9H2m8z/scan-thumb.jpg",
+    "banner": "https://i.ibb.co/p3N8jL9/scan-banner.jpg",
+    "downloads": 10000000,
+    "category": "Productivity",
+    "rating": 4.9,
+    "description": "Turn your phone into a high-quality PDF scanner. Features OCR to extract text from images and documents instantly.",
+    "features": ["PDF Export", "Cloud Storage", "OCR Technology"],
+    "reviews": [
+      { "user": "office_worker", "rating": 5, "comment": "Clearer than my actual office scanner!" },
+      { "user": "uni_student", "rating": 5, "comment": "Saves me so much time in the library." }
+    ]
+  },
+  {
+    "id": "app012",
+    "name": "Pixel Art Studio",
+    "developer": "Creative Pixel",
+    "thumbnail": "https://i.ibb.co/mH9X2N8/pixel-thumb.jpg",
+    "banner": "https://i.ibb.co/rS0jL9K/pixel-banner.jpg",
+    "downloads": 850000,
+    "category": "Gaming",
+    "rating": 4.3,
+    "description": "Create stunning pixel art and animations. Join a community of artists and share your creations globally.",
+    "features": ["Layer Support", "Animation Timeline", "Community Gallery"],
+    "reviews": [
+      { "user": "art_lover", "rating": 4, "comment": "Easy to use, but needs more brush types." }
+    ]
+  },
+  {
+    "id": "app013",
+    "name": "History Hunter",
+    "developer": "Chronos Edu",
+    "thumbnail": "https://i.ibb.co/gR7X9M1/history-thumb.jpg",
+    "banner": "https://i.ibb.co/vX8N3m5/history-banner.jpg",
+    "downloads": 450000,
+    "category": "Education",
+    "rating": 4.5,
+    "description": "Travel through time with Augmented Reality. See ancient civilizations come to life right in your living room.",
+    "features": ["AR Exploration", "Historical Timelines", "3D Artifacts"],
+    "reviews": [
+      { "user": "history_buff", "rating": 5, "comment": "Mind-blowing experience for history fans." }
+    ]
+  },
+  {
+    "id": "app014",
+    "name": "Budget Buddy",
+    "developer": "Finance Flow",
+    "thumbnail": "https://i.ibb.co/xL8m3z9/budget-thumb.jpg",
+    "banner": "https://i.ibb.co/mS9X6v4/budget-banner.jpg",
+    "downloads": 3100000,
+    "category": "Productivity",
+    "rating": 4.7,
+    "description": "Take control of your finances. Track expenses, set savings goals, and get insights into your spending habits.",
+    "features": ["Bank Sync", "Custom Categories", "Savings Tracker"],
+    "reviews": [
+      { "user": "saver_2024", "rating": 5, "comment": "Finally, an app that makes budgeting easy." },
+      { "user": "richard_f", "rating": 4, "comment": "Excellent, but manual entry could be faster." }
+    ]
+  },
+  {
+    "id": "app015",
+    "name": "Space Settlers",
+    "developer": "Galactic Games",
+    "thumbnail": "https://i.ibb.co/qD8m4zX/space-thumb.jpg",
+    "banner": "https://i.ibb.co/v4mK9zL/space-banner.jpg",
+    "downloads": 5400000,
+    "category": "Gaming",
+    "rating": 4.6,
+    "description": "Colonize Mars and beyond. Manage resources, build habitats, and survive the harsh conditions of deep space.",
+    "features": ["Resource Management", "Space Exploration", "Tech Tree"],
+    "reviews": [
+      { "user": "sci_fi_fan", "rating": 5, "comment": "Incredibly addictive and scientifically accurate!" }
+    ]
+  }
+]
