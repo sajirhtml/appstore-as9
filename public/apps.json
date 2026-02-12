@@ -8,6 +8,7 @@
     "downloads": 3500000,
     "category": "Education",
     "rating": 4.8,
+    "is_trending": true,
     "description": "Programming Hero is a fun and interactive way to learn programming. Whether you're a beginner or looking to brush up your skills, this app makes learning to code exciting and practical.",
     "features": ["Interactive coding lessons", "Real-world projects", "Gamified learning experience"],
     "reviews": [
@@ -24,6 +25,7 @@
     "downloads": 1200000,
     "category": "Productivity",
     "rating": 4.7,
+    "is_trending": true,
     "description": "Master your schedule with AI-driven time blocking and deep work sessions. ZenTime helps you eliminate distractions.",
     "features": ["Smart Time Blocking", "Focus Music integration", "Distraction Blocker"],
     "reviews": [
@@ -39,6 +41,7 @@
     "downloads": 8900000,
     "category": "Gaming",
     "rating": 4.9,
+    "is_trending": true,
     "description": "An award-winning open-world RPG with stunning graphics and deep lore.",
     "features": ["Open World", "Real-time Combat", "Multiplayer Raids"],
     "reviews": [
@@ -54,6 +57,7 @@
     "downloads": 1500000,
     "category": "Education",
     "rating": 4.6,
+    "is_trending": false,
     "description": "Learn over 40 languages through bite-sized lessons and daily streaks.",
     "features": ["Speech Recognition", "Daily Streaks", "Leagues"],
     "reviews": [
@@ -69,6 +73,7 @@
     "downloads": 500000,
     "category": "Productivity",
     "rating": 4.2,
+    "is_trending": false,
     "description": "A versatile note-taking app that supports Markdown and cloud sync.",
     "features": ["Markdown Support", "OCR Search", "Cross-device Sync"],
     "reviews": [
@@ -84,6 +89,7 @@
     "downloads": 2500000,
     "category": "Gaming",
     "rating": 4.5,
+    "is_trending": false,
     "description": "Futuristic neon racing at 200mph. Customize your hover-car.",
     "features": ["Hover Physics", "Custom Vinyls", "Nitro Boost"],
     "reviews": [
@@ -99,6 +105,7 @@
     "downloads": 4000000,
     "category": "Education",
     "rating": 4.8,
+    "is_trending": true,
     "description": "Learn the art of mindfulness. Guided meditations for sleep and focus.",
     "features": ["Sleep Stories", "Breathing Exercises", "Mood Tracking"],
     "reviews": [
@@ -114,6 +121,7 @@
     "downloads": 750000,
     "category": "Productivity",
     "rating": 4.1,
+    "is_trending": false,
     "description": "Kanban style task management for teams. Track projects and set deadlines.",
     "features": ["Kanban Boards", "Team Chat", "Gantt Charts"],
     "reviews": [
@@ -129,6 +137,7 @@
     "downloads": 6200000,
     "category": "Gaming",
     "rating": 4.4,
+    "is_trending": false,
     "description": "Build your village, train your army, and sail the seas to conquer.",
     "features": ["Base Building", "Clan Wars", "Naval Combat"],
     "reviews": [
@@ -144,6 +153,7 @@
     "downloads": 2200000,
     "category": "Education",
     "rating": 4.6,
+    "is_trending": false,
     "description": "Learn Web Development and AI on the go with interactive lessons.",
     "features": ["Sandbox Editor", "Certificates", "Peer Reviews"],
     "reviews": [
@@ -159,6 +169,7 @@
     "downloads": 10000000,
     "category": "Productivity",
     "rating": 4.9,
+    "is_trending": true,
     "description": "Turn your phone into a high-quality PDF scanner with OCR.",
     "features": ["PDF Export", "Cloud Storage", "OCR Technology"],
     "reviews": [
@@ -174,6 +185,7 @@
     "downloads": 850000,
     "category": "Gaming",
     "rating": 4.3,
+    "is_trending": false,
     "description": "Create stunning pixel art and animations. Join a global community.",
     "features": ["Layer Support", "Animation Timeline", "Gallery"],
     "reviews": [
@@ -189,6 +201,7 @@
     "downloads": 450000,
     "category": "Education",
     "rating": 4.5,
+    "is_trending": false,
     "description": "Travel through time with Augmented Reality features.",
     "features": ["AR Exploration", "Historical Timelines", "3D Artifacts"],
     "reviews": [
@@ -204,6 +217,7 @@
     "downloads": 3100000,
     "category": "Productivity",
     "rating": 4.7,
+    "is_trending": true,
     "description": "Take control of your finances. Track expenses and set goals.",
     "features": ["Bank Sync", "Custom Categories", "Savings Tracker"],
     "reviews": [
@@ -219,6 +233,7 @@
     "downloads": 5400000,
     "category": "Gaming",
     "rating": 4.6,
+    "is_trending": false,
     "description": "Colonize Mars. Manage resources and build habitats in deep space.",
     "features": ["Resource Management", "Exploration", "Tech Tree"],
     "reviews": [
