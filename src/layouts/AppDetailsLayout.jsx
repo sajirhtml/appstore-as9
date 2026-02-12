@@ -16,11 +16,11 @@ const AppDetailsLayout = () => {
       <section className="w-full">
         <CardDetails data={data}></CardDetails>
       </section>
-      <section className="w-full">
-        <Review></Review>
+      <section className="my-5 md:my-10">
+        <Review ></Review>
       </section>
-      <section className="w-full">
-        <PostedReviews></PostedReviews>
+      <section className="md:py-10 w-full bg-amber-100 p-5">
+        <PostedReviews data={data}></PostedReviews>
       </section>
       <footer className="w-full"><Footer></Footer></footer>
     </div>
