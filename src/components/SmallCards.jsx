@@ -2,14 +2,14 @@ import React from "react";
 import { FaStar } from "react-icons/fa";
 import { PiDownloadSimpleBold } from "react-icons/pi";
 
-const Education = ({ data = [] }) => {
-  const educationApps = data.filter((app) => app.category === "Education");
+const SmallCards = ({title, data }) => {
+//   const educationApps = data.filter((app) => app.category === "Education");
 
   return (
     <div className="w-screen mx-auto px-5 py-5 my-5 bg-base-200">
-      <h2 className="text-xl font-bold mb-4">Education Apps</h2>
+      <h2 className="text-xl font-bold mb-4">{title}</h2>
       <div className="flex overflow-x-auto gap-4 pb-2">
-        {educationApps.map((app) => (
+        {data.map((app) => (
           <div
             key={app.id}
             className="bg-white rounded-lg shadow-md overflow-hidden w-40 flex-shrink-0"
@@ -38,4 +38,4 @@ const Education = ({ data = [] }) => {
   );
 };
 
-export default Education;
+export default SmallCards;

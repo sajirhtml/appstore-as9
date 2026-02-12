@@ -6,6 +6,7 @@ import Login from '../components/Login';
 import Register from '../components/Register';
 import Home from '../pages/Home';
 import Loading from '../components/Loading';
+import CardDetails from '../components/CardDetails';
 
 const router = createBrowserRouter([
     {
@@ -33,6 +34,18 @@ const router = createBrowserRouter([
                 element:<Register></Register>
             }
         ]
+    },
+    {
+        path:"/app/:id",
+        element:<CardDetails></CardDetails>,
+        loader: ({params}) => fetch("/apps.json").then(res => res.json()).then(data => {
+            const app = data.find(app => app.id === params.id);
+            return app;
+        }),
+    },
+    {
+        path:"/*",
+        element:<div className='flex items-center justify-center h-screen'><h2 className='text-3xl font-bold'>404 - Page Not Found</h2></div>
     }
 ])
 
