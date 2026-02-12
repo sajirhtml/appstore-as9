@@ -7,6 +7,7 @@ import Register from '../components/Register';
 import Home from '../pages/Home';
 import Loading from '../components/Loading';
 import CardDetails from '../components/CardDetails';
+import AppDetailsLayout from '../layouts/AppDetailsLayout';
 
 const router = createBrowserRouter([
     {
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
     },
     {
         path:"/app/:id",
-        element:<CardDetails></CardDetails>,
+        element:<AppDetailsLayout></AppDetailsLayout>,
         loader: ({params}) => fetch("/apps.json").then(res => res.json()).then(data => {
             const app = data.find(app => app.id === params.id);
             return app;

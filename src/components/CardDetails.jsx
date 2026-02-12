@@ -1,28 +1,46 @@
-import React from "react";
-import { useLoaderData, useParams } from "react-router";
+import { BsListNested } from "react-icons/bs";
 
-const CardDetails = () => {
-    const app = useLoaderData();
-    const { name, developer, description, rating, downloads, thumbnail } = app;
-    const {id} = useParams();
-    
+const CardDetails = ({ data }) => {
+  const {
+    name,
+    developer,
+    description,
+    rating,
+    downloads,
+    thumbnail,
+    banner,
+    category,
+    features,
+  } = data;
+  console.log(data, features);
   return (
     <div>
-      <div className="card bg-base-100 image-full w-96 shadow-sm">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">Card Title</h2>
-          <p>
-            A card component has a figure, a body part, and inside body there
-            are title and actions parts
-          </p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+      <div
+        className="hero min-h-screen"
+        style={{
+          backgroundImage: `url(${banner})`,
+        }}
+      >
+        <div className="hero-overlay"></div>
+        <div className="hero-content text-neutral-content text-center">
+          <div className="max-w-md">
+            <img
+              src={thumbnail}
+              alt={name}
+              className="w-24 h-24 rounded-full mx-auto mb-4"
+            />
+            <h1 className="mb-5 text-5xl font-bold">{name}</h1>
+            <p className="mb-5 text-xl text-blue-300">{developer}</p>
+            <p className="mb-5 text-sm text-gray-300">
+              ⭐{rating} | ⬇️{downloads} | {category}
+            </p>
+            <button className="btn btn-primary">Install</button>
+            <p className="mt-5">{description}</p>
+            <div className="flex justify-center items-center gap-2 mt-5">
+              {features.map((feature) => (
+                <p className="btn btn-dash btn-sm rounded-4xl">{feature}</p>
+              ))}
+            </div>
           </div>
         </div>
       </div>

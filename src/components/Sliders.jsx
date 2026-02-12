@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Swiper = ({ data }) => {
   return (
@@ -16,21 +17,27 @@ const Swiper = ({ data }) => {
           />
 
           {/* Top-left thumbnail + name overlay */}
-          <div className="absolute top-4 left-4 z-20">
-            <div className="flex items-center gap-3 bg-black/50 text-white rounded-lg px-3 py-2 backdrop-blur-sm">
-              <img
-                src={app.thumbnail || app.icon || app.banner}
-                alt={`${app.name} thumbnail`}
-                className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full object-cover border border-white/30"
-              />
-              <div className="leading-tight">
-                <div className="font-semibold text-sm sm:text-base md:text-lg">{app.name}</div>
-                {app.developer && (
-                  <div className="text-xs sm:text-sm text-white/80">{app.developer}</div>
-                )}
+          <Link to={`/app/${app.id}`}>
+            <div className="absolute top-4 left-4 z-20">
+              <div className="flex items-center gap-3 bg-black/50 text-white rounded-lg px-3 py-2 backdrop-blur-sm">
+                <img
+                  src={app.thumbnail || app.icon || app.banner}
+                  alt={`${app.name} thumbnail`}
+                  className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full object-cover border border-white/30"
+                />
+                <div className="leading-tight">
+                  <div className="font-semibold text-sm sm:text-base md:text-lg">
+                    {app.name}
+                  </div>
+                  {app.developer && (
+                    <div className="text-xs sm:text-sm text-white/80">
+                      {app.developer}
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
 
           {/* Navigation buttons (center) */}
           <div className="absolute left-5 right-5 top-1/2 z-30 flex -translate-y-1/2 transform justify-between">
