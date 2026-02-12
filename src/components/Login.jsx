@@ -1,5 +1,6 @@
 import React, { use, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
+import { toast } from "react-toastify";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Login = () => {
@@ -15,12 +16,12 @@ const Login = () => {
     const password = form.password.value;
     Login(email, password)
       .then((result) => {
-        alert(`Login successful, welcome ${result.user.email}`);
+        toast.success(`Login successful, welcome ${result.user.email}`);
         // console.log(result.user);
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
-        console.error(error);
+        toast.error(error);
         setError(error.code);
       });
   };

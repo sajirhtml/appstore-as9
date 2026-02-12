@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { Link, NavLink } from "react-router";
+import { toast } from "react-toastify";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
@@ -9,10 +10,11 @@ const Navbar = () => {
   const handleLogOut = () => {
     Logout()
       .then(() => {
-        alert("Logged out successfully");
+        toast.success("Logged out successfully");
       })
       .catch((error) => {
         console.error(error);
+        toast.error("Failed to logout");
       });
   };
 

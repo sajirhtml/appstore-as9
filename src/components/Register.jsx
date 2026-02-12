@@ -1,5 +1,6 @@
 import React, { use } from "react";
 import { Link, Navigate, useNavigate } from "react-router";
+import { toast } from "react-toastify";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Register = () => {
@@ -16,20 +17,20 @@ const Register = () => {
     console.log(name, photo, email, password);
 
     if (password.length < 6) {
-      alert("❌ Password too short! It must be at least 6 characters.");
+      toast.error("Password too short! It must be at least 6 characters.");
       return;
     }
 
     if (!/[A-Z]/.test(password)) {
-      alert(
-        "❌ Missing Uppercase! Your password needs at least one capital letter (A-Z).",
+      toast.error(
+        "Missing Uppercase! Your password needs at least one capital letter (A-Z).",
       );
       return;
     }
 
     if (!/[a-z]/.test(password)) {
-      alert(
-        "❌ Missing Lowercase! Your password needs at least one small letter (a-z).",
+      toast.error(
+        "Missing Lowercase! Your password needs at least one small letter (a-z).",
       );
       return;
     }
@@ -43,14 +44,15 @@ const Register = () => {
           .then(() => {
             setUser({ ...result.user, displayName: name, photoURL: photo });
             navigate("/");
+            toast.success(`Welcome ${name}`)
             // console.log(result.user);
           })
           .catch((error) => {
-            console.error(error);
+            toast.error(error);
           });
       })
       .catch((error) => {
-        console.error(error);
+        toast.error(error);
       });
   };
 

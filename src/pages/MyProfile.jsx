@@ -1,4 +1,5 @@
 import { use, useState } from "react";
+import { toast } from "react-toastify";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { AuthContext } from "../provider/AuthProvider";
@@ -14,8 +15,7 @@ const MyProfile = () => {
       photoURL: photoURL,
     });
     console.log(displayName, photoURL);
-
-    // alert("Profile updated successfully!");
+    toast.success("Profile updated successfully!");
   };
 
   return (
@@ -52,8 +52,8 @@ const MyProfile = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div className="card bg-base-100 shadow-xl p-6 w-full max-w-md">
+      <section className="w-screen flex justify-center items-center bg-base-200">
+        <div className="card bg-base-100 shadow-xl p-6 w-full max-w-md mb-10">
               <h2 className="text-2xl font-bold mb-4">Edit Profile</h2>
               <form onSubmit={handleUpdateProfile} className="space-y-4">
                 <input
