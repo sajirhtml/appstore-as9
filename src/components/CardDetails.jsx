@@ -1,25 +1,18 @@
-import { BsListNested } from "react-icons/bs";
-
-const CardDetails = ({ data }) => {
+const CardDetails = ({ data, isInstalled, onInstallToggle }) => {
   const {
     name,
     developer,
     description,
-    rating,
-    downloads,
     thumbnail,
     banner,
-    category,
     features,
   } = data;
-  console.log(data, features);
+
   return (
     <div>
       <div
         className="hero min-h-screen"
-        style={{
-          backgroundImage: `url(${banner})`,
-        }}
+        style={{ backgroundImage: `url(${banner})` }}
       >
         <div className="hero-overlay"></div>
         <div className="hero-content text-neutral-content text-center">
@@ -31,14 +24,24 @@ const CardDetails = ({ data }) => {
             />
             <h1 className="mb-5 text-5xl font-bold">{name}</h1>
             <p className="mb-5 text-xl text-blue-300">{developer}</p>
-            <p className="mb-5 text-sm text-gray-300">
-              ⭐{rating} | ⬇️{downloads} | {category}
-            </p>
-            <button className="btn btn-primary">Install</button>
+
+            {/* Toggle Button */}
+            <button
+              onClick={onInstallToggle}
+              className={`btn ${isInstalled ? "btn-error" : "btn-primary"}`}
+            >
+              {isInstalled ? "Uninstall" : "Install"}
+            </button>
+
             <p className="mt-5">{description}</p>
             <div className="flex flex-wrap justify-center items-center gap-2 mt-5">
-              {features.map((feature) => (
-                <p className="btn btn-sm btn-ghost badge-info badge-outline rounded-4xl">{feature}</p>
+              {features.map((feature, idx) => (
+                <p
+                  key={idx}
+                  className="btn btn-sm btn-ghost badge-info badge-outline rounded-4xl"
+                >
+                  {feature}
+                </p>
               ))}
             </div>
           </div>
@@ -47,5 +50,4 @@ const CardDetails = ({ data }) => {
     </div>
   );
 };
-
 export default CardDetails;
