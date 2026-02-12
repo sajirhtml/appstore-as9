@@ -9,7 +9,8 @@ const MyProfile = () => {
   const [displayName, setDisplayName] = useState(user?.displayName || "");
   const [photoURL, setPhotoURL] = useState(user?.photoURL || "");
 
-  const handleUpdateProfile = () => {
+  const handleUpdateProfile = (e) => {
+    e.preventDefault();
     updatedUser({
       displayName: displayName,
       photoURL: photoURL,
