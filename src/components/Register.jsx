@@ -1,18 +1,19 @@
 import React, { use } from "react";
-import { Link } from "react-router";
+import { Link, Navigate, useNavigate } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Register = () => {
-  const {createUser, setUser} = use(AuthContext);
+  const {createUser, setUser, updatedUser } = use(AuthContext);
+  const navigate = useNavigate();
   const handleRegister = (e) => {
     e.preventDefault();
     console.log("Register form submitted", e.target);
     const form = e.target;
     const name = form.name.value;
-    const photoURL = form.photoURL.value;
+    const photo = form.photoURL.value;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(name, photoURL, email, password);
+    console.log(name, photo, email, password);
 
     if (password.length < 6) {
       alert("❌ Password too short! It must be at least 6 characters.");
@@ -33,17 +34,24 @@ const Register = () => {
       return;
     }
 
-    createUser(email,password)
-    .then((result) => {
-      const user = result.user;
-      // console.log(user);
-      setUser(user)
-    })
-    .catch((error) =>{
-      // const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorMessage)
-    })
+    createUser(email, password)
+      .then((result) => {
+        updatedUser({
+          displayName: name,
+          photoURL: photo,
+        })
+          .then(() => {
+            setUser({ ...result.user, displayName: name, photoURL: photo });
+            navigate("/");
+            // console.log(result.user);
+          })
+          .catch((error) => {
+            console.error(error);
+          });
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (

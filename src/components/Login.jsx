@@ -38,6 +38,7 @@ const Login = () => {
           className="input"
           placeholder="Email"
           name="email"
+          required
         />
 
         <label className="label">Password</label>
@@ -46,6 +47,7 @@ const Login = () => {
           className="input"
           placeholder="Password"
           name="password"
+          required
         />
 
         {error && <p className="text-red-600">{error}</p>}

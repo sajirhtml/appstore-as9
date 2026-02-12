@@ -5,6 +5,7 @@ import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
   const { user, Logout } = use(AuthContext);
+  console.log(user)
   const handleLogOut = () => {
     Logout()
       .then(() => {
@@ -28,19 +29,17 @@ const Navbar = () => {
         <div className="dropdown dropdown-end">
           <div role="button" className="btn btn-ghost btn-circle avatar">
             <div className="rounded-full">
-              {user && user.url ? (
-                <img src={user.url} alt="User Avatar"/>
+              {user && user.photoURL ? (
+                <img src={user.photoURL} alt="User Avatar"/>
                 
               ) : (
                 <FaUserCircle className="text-3xl" />
               )}
-              {/* <FaUserCircle className="text-3xl" /> */}
+
             </div>
           </div>
         </div>
-        {/* <Link to="/auth/login" className="btn btn-primary mx-2 md:mx-5">
-          Log in
-        </Link> */}
+
         {user ? (
           <button onClick={handleLogOut} className="btn btn-primary mx-2 md:mx-5">
             Logout
