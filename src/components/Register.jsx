@@ -8,13 +8,11 @@ const Register = () => {
   const navigate = useNavigate();
   const handleRegister = (e) => {
     e.preventDefault();
-    console.log("Register form submitted", e.target);
     const form = e.target;
     const name = form.name.value;
     const photo = form.photoURL.value;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(name, photo, email, password);
 
     if (password.length < 6) {
       toast.error("Password too short! It must be at least 6 characters.");
@@ -45,7 +43,6 @@ const Register = () => {
             setUser({ ...result.user, displayName: name, photoURL: photo });
             navigate("/");
             toast.success(`Welcome ${name}`)
-            // console.log(result.user);
           })
           .catch((error) => {
             toast.error(error);

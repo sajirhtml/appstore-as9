@@ -6,14 +6,12 @@ import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
   const { user, Logout } = use(AuthContext);
-  // console.log(user);
   const handleLogOut = () => {
     Logout()
       .then(() => {
         toast.success("Logged out successfully");
       })
       .catch((error) => {
-        console.error(error);
         toast.error("Failed to logout");
       });
   };

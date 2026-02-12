@@ -14,7 +14,6 @@ const MyProfile = () => {
       displayName: displayName,
       photoURL: photoURL,
     });
-    console.log(displayName, photoURL);
     toast.success("Profile updated successfully!");
   };
 

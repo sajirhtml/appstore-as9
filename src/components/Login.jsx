@@ -17,7 +17,6 @@ const Login = () => {
     Login(email, password)
       .then((result) => {
         toast.success(`Login successful, welcome ${result.user.email}`);
-        // console.log(result.user);
         navigate(`${location.state ? location.state : "/"}`);
       })
       .catch((error) => {
