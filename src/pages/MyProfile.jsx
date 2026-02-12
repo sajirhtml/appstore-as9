@@ -10,7 +10,7 @@ const MyProfile = () => {
   const [photoURL, setPhotoURL] = useState(user?.photoURL || "");
 
   const handleUpdateProfile = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     updatedUser({
       displayName: displayName,
       photoURL: photoURL,
