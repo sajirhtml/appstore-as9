@@ -2,7 +2,7 @@ import React from "react";
 
 const Swiper = ({ data }) => {
   return (
-    <div className="carousel w-full">
+    <div className="carousel w-full overflow-auto">
       {data.map((app, index) => (
         <div
           key={app.id}
