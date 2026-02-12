@@ -52,7 +52,7 @@ const MyProfile = () => {
           </div>
         </div>
       </section>
-      <section className="w-screen flex justify-center items-center bg-base-200">
+      <section className=" flex justify-center items-center bg-base-200">
         <div className="card bg-base-100 shadow-xl p-6 w-full max-w-md mb-10">
               <h2 className="text-2xl font-bold mb-4">Edit Profile</h2>
               <form onSubmit={handleUpdateProfile} className="space-y-4">
