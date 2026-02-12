@@ -6,9 +6,10 @@ import Login from "../components/Login";
 import Register from "../components/Register";
 import Home from "../pages/Home";
 import Loading from "../components/Loading";
-import CardDetails from "../components/CardDetails";
 import AppDetailsLayout from "../layouts/AppDetailsLayout";
 import PrivateRoute from "../provider/PrivateRoute";
+import PrivateRouter from "../provider/PrivateRoute";
+import MyProfile from "../pages/MyProfile";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
         index: true,
         Component: Home,
         loader: () => fetch("/apps.json"),
-        hydrateFallbackElement: Loading,
+        hydrateFallbackElement: <Loading></Loading>,
       },
     ],
   },
@@ -51,6 +52,13 @@ const router = createBrowserRouter([
           const app = data.find((app) => app.id === params.id);
           return app;
         }),
+    hydrateFallbackElement: <Loading></Loading>,
+  },
+  {
+    path:"/myprofile",
+    element: <PrivateRoute>
+        <MyProfile></MyProfile>
+      </PrivateRoute>
   },
   {
     path: "/*",

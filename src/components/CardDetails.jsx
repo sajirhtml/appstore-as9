@@ -36,7 +36,7 @@ const CardDetails = ({ data }) => {
             </p>
             <button className="btn btn-primary">Install</button>
             <p className="mt-5">{description}</p>
-            <div className="flex justify-center items-center gap-2 mt-5">
+            <div className="flex flex-wrap justify-center items-center gap-2 mt-5">
               {features.map((feature) => (
                 <p className="btn btn-sm btn-ghost badge-info badge-outline rounded-4xl">{feature}</p>
               ))}

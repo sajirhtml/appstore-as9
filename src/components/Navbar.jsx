@@ -1,15 +1,14 @@
 import React, { use } from "react";
 import { FaUserCircle } from "react-icons/fa";
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
   const { user, Logout } = use(AuthContext);
-  console.log(user)
+  // console.log(user);
   const handleLogOut = () => {
     Logout()
       .then(() => {
-        // Logout successful.
         alert("Logged out successfully");
       })
       .catch((error) => {
@@ -20,28 +19,49 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="flex-1">
-        <Link to="/" className="font-semibold text-2xl">
-          AppStore
-        </Link>
-        {}
+        <div className="flex items-center gap-2">
+          <img
+            src="https://img.icons8.com/?size=100&id=77121&format=png&color=000000"
+            alt=""
+            className="w-8"
+          />
+          <Link to="/" className="font-semibold text-2xl">
+            AppStore
+          </Link>
+        </div>
+      </div>
+      <div className="flex-1 hidden sm:block">
+        <Link to="/" className="mr-3 text-lg">Apps</Link>
+        <NavLink
+          to="/myprofile"
+          className={({ isActive }) =>
+            `text-lg ${isActive ? "underline underline-offset-4" : ""}`
+          }
+        >
+          {user? `${user.displayName}`: "MyProfile"}
+          
+        </NavLink>
       </div>
       <div className="flex-none ">
         <div className="dropdown dropdown-end">
-          <div role="button" className="btn btn-ghost btn-circle avatar">
+          <div role="button" className="btn btn-ghost btn-circle avatar" title={user?.displayName}>
             <div className="rounded-full">
               {user && user.photoURL ? (
-                <img src={user.photoURL} alt="User Avatar"/>
-                
+                <Link to="/myprofile">
+                <img src={user.photoURL} alt="User Avatar" />
+                </Link>
               ) : (
-                <FaUserCircle className="text-3xl" />
+                ''
               )}
-
             </div>
           </div>
         </div>
 
         {user ? (
-          <button onClick={handleLogOut} className="btn btn-primary mx-2 md:mx-5">
+          <button
+            onClick={handleLogOut}
+            className="btn btn-primary mx-2 md:mx-5"
+          >
             Logout
           </button>
         ) : (
